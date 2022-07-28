@@ -71,3 +71,14 @@ on boot && property:ro.boot.product.hardware.sku=nfc
     enable qti_esepowermanager_service_1_1
     enable secureelement-hal_1_2
     enable vendor.nfc_hal_service
+
+# NVMAC
+on property:init.svc.vendor.nv_mac=stopped
+    start vendor.btmac-sh
+
+service vendor.btmac-sh /vendor/bin/init.mi.btmac.sh
+    class late_start
+    user system
+    group system bluetooth wifi
+    oneshot
+    disabled
