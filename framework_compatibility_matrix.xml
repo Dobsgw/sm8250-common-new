@@ -101,6 +101,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>com.qualcomm.qti.bluetooth_audio</name>
+        <version>1.0</version>
+        <interface>
+            <name>IBluetoothAudio</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>com.qualcomm.qti.dpm.api</name>
         <version>1.0</version>
         <interface>
@@ -109,24 +117,8 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>com.qualcomm.qti.imscmservice</name>
-        <version>2.0-2</version>
-        <interface>
-            <name>IImsCmService</name>
-            <instance>qti.ims.connectionmanagerservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>com.qualcomm.qti.uceservice</name>
-        <version>2.0-2</version>
-        <interface>
-            <name>IUceService</name>
-            <instance>com.qualcomm.qti.uceservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.display.color</name>
-        <version>1.0-6</version>
+        <version>1.0-5</version>
         <interface>
             <name>IDisplayColor</name>
             <instance>default</instance>
@@ -149,14 +141,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <version>2.0-1</version>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.nxp.nxpnfc</name>
         <version>2.0</version>
         <interface>
@@ -166,7 +150,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.data.factory</name>
-        <version>2.0-1</version>
+        <version>2.0-3</version>
         <interface>
             <name>IFactory</name>
             <instance>default</instance>
@@ -200,6 +184,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAudioHalExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <version>2.0</version>
         <interface>
@@ -220,6 +212,14 @@
         <version>1.0</version>
         <interface>
             <name>IBTConfigStore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.cacert</name>
+        <version>1.0</version>
+        <interface>
+            <name>IService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -276,7 +276,6 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.display.composer</name>
-        <version>2.0-1</version>
         <version>3.0</version>
         <interface>
             <name>IQtiComposer</name>
@@ -298,6 +297,14 @@
         <interface>
             <name>IDspService</name>
             <instance>dspservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.factory</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IFactory</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -339,7 +346,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.ims</name>
-        <version>1.0-6</version>
+        <version>1.0-7</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -356,7 +363,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.lpa</name>
-        <version>1.0</version>
+        <version>1.0-1</version>
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
@@ -418,14 +425,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.slmadapter</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISlmAdapter</name>
-            <instance>SlmAdapter</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.soter</name>
         <version>1.0</version>
         <interface>
@@ -450,6 +449,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.wifilearner</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiStats</name>
+            <instance>wifiStats</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <version>1.0</version>
         <interface>
@@ -470,22 +477,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.ims.callinfo</name>
-        <version>1.0</version>
-        <interface>
-            <name>IService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.ims.factory</name>
-        <version>1.0</version>
-        <interface>
-            <name>IImsFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.imsrtpservice</name>
         <version>3.0</version>
         <interface>
@@ -494,18 +485,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
+        <name>vendor.qti.qspmhal</name>
         <version>1.0</version>
         <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <version>1.0</version>
-        <interface>
-            <name>IXiaomiFingerprint</name>
+            <name>IQspmhal</name>
             <instance>default</instance>
         </interface>
     </hal>
